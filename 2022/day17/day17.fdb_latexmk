@@ -1,0 +1,11 @@
+# Fdb version 4
+["pdflatex"] 1724123941.36523 "day17.py" "day17.pdf" "day17" 1724123941.8435 2
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1714953600 40900 887e0dc8cac988a9e9c574af364cf837 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1722455347 7760175 bfe491c3ea5613f97eefea00700a8934 ""
+  "day17.aux" 1724123941.36353 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "day17.py" 1724123652.03153 1013 f077a995dd60a0f70425abaf8498e075 ""
+  (generated)
+  "day17.aux"
+  "day17.log"
+  "day17.pdf"
+  (rewritten before read)

@@ -1,0 +1,6 @@
+PWD /home/robert/Documents/GitHub/aoc/2022/day17
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT day17.py
+OUTPUT day17.log
