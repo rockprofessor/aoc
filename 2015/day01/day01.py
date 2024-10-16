@@ -1,5 +1,3 @@
-# input: https://adventofcode.com/2015/day/1
-
 data = open("01.in").read()
 
 print('Answer 1:',data.count('(') - data.count(')'))
