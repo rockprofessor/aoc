@@ -1,5 +1,5 @@
 data = [x.strip().split(")") for x in open("day6.in")]
-orbits = {y : x for x,y in data}
+orbits = {y : x for x, y in data}
 
 def way(x):
     return (way(orbits[x]) if x in orbits else []) + [x] 
