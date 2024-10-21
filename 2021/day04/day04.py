@@ -1,3 +1,5 @@
+# sulution warks for testcase but not for real input
+
 import numpy as np
 
 data = [i.strip() for i in open('4.in')]
@@ -35,9 +37,9 @@ while found == 0:
                 if B[r][c] == d:
                     M[i][r][c] = 1
     #check lines
-    test = M[i].sum(axis=0)
+    test = M[i].sum(axis = 0)
     for r in range(5):
-        if M[i].sum(axis=0)[r] == 5 or M[i].sum(axis=1)[r] == 5:
+        if M[i].sum(axis = 0)[r] == 5 or M[i].sum(axis = 1)[r] == 5:
             found = 1
 
 B = np.array(B)
@@ -49,6 +51,6 @@ for x in range(5):
     for y in range(5):
         M[i][y][x] = abs(M[i][y][x] - 1) #invert marks
 
-print(M[i]*B)
+print(M[i] * B)
 print('Answer 1: ', sum(sum(M[i] * B)) * d)
 
