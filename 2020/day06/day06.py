@@ -1,7 +1,7 @@
 from collections import OrderedDict
 
 def rem_dup(s): 
-        return "".join(OrderedDict.fromkeys(s))
+        return ''.join(OrderedDict.fromkeys(s))
 
 data = [i.strip() for i in open('day6.in')]
 #last line in in file must be empty!!!!
