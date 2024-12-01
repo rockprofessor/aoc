@@ -2,8 +2,8 @@ data = [i.strip() for i in open('1.in')]
 left = []
 right = []
 
-for d in data:
-    l, r = d.split()
+for line in data:
+    l, r = line.split()
     left.append(int(l))
     right.append(int(r))
 
