@@ -1,5 +1,5 @@
 # input: https://adventofcode.com/2023/day/15
-data = open('/15.in').read().split(',')
+data = open('15.in').read().split(',')
 
 def doit(raw_c,cv):
 	cv += ord(raw_c)

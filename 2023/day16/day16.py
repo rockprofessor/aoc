@@ -69,13 +69,3 @@ for r in range(cols): record.append(count_tiles((r, -1, 0,1)))
 for r in range(cols): record.append(count_tiles((r, rows, 0,-1)))
 	
 print('Answer 2:',max(record))
-
-
-
-
-
-
-
-
-
-
