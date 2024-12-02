@@ -19,4 +19,3 @@ for i in range(len(left)):
 
 print('Answer 1:', ans1)
 print('Answer 2:', ans2)
-
