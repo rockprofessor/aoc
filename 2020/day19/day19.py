@@ -8,9 +8,4 @@ for r in rules:
 print()
 
 for d in data:
-
     print(d)
-
-print('test')
-print('hey')
-print()
