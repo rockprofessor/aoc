@@ -1,6 +1,6 @@
 data = [i.strip() for i in open('4.in')]
-    
-ans1 = 0    
+
+ans1 = 0
 ans2 = 0
 r = len(data)
 for l in range(r):
@@ -19,4 +19,3 @@ for l in range(r):
 
 print('Answer 1:', ans1)
 print('Answer 2:', ans2)
-    
