@@ -1,62 +1,42 @@
-data = [i.strip() for i in open('t.in')]
-
-look =       [(0, 1), (1, 0), (0, -1), (-1, 0)]
-directions = [ '>',    'v',    '<',     '^'   ]
+data = [i.strip() for i in open('6.in')]
+look = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+directions = ['>', 'v', '<', '^']
 r = len(data)
-obs = []
 
 for l, line in enumerate(data):
     for c, char in enumerate(line):
         if char in  directions:
             pos = (l, c)
+            visited = [pos]     #store visited coordinates
             lo = directions.index(char)
-        if char == '#':
-            obs.append((l, c))
+            go =[lo]
 
-obsrow ={i:[] for i in range(r)}
-obscol ={i:[] for i in range(r)}
+while 0 <= pos[0]+look[lo][0] < r and 0 <= pos[1]+look[lo][1] < r:
+    if data[pos[0] + look[lo][0]][pos[1] + look[lo][1]] == '#':
+        lo = (lo + 1) % 4   #turn 90° clockwise
+    else:
+        pos = (pos[0] + look[lo][0], pos[1] + look[lo][1])
+        visited.append(pos)
+        go.append(lo)
+print('Answer 1:', len(set(visited)))
 
-for o in obs:
-    obsrow[o[0]].append(o[1])
-    obscol[o[1]].append(o[0])
-
-for i in range(r):
-    obsrow[i].sort()
-    obscol[i].sort()
-t = True
-while True:
-    print(pos, lo)
-    if lo == 0:     #right
-        for i in range(pos[1], r):
-            if i in obsrow[pos[0]]:
-                pos = (pos[0], i - 1)
-                lo = (lo + 1) % 4
-                break
-            if i == r - 1:
-                t = False
-    elif lo == 1:   #down
-        for i in range(pos[0], r):
-            if i in obscol[pos[1]]:
-                pos = (i - 1, pos[1])
-                lo = (lo + 1) % 4
-                break
-            if i == r - 1:
-                t = False
-    elif lo == 2:   #left
-        for i in range(pos[1], -1, -1):
-            if i in obsrow[pos[0]]:
-                pos = (pos[0], i + 1)
-                lo = (lo + 1) % 4
-                break
-            if i == 0:
-                t = False
-    elif lo == 3:   #up
-        for i in range(pos[0], -1, -1):
-            if i in obscol[pos[1]]:
-                pos = (i + 1, pos[1])
-                lo = (lo + 1) % 4
-                break
-            if i == 0:
-                t = False
-    if not t:
-        break
+loopcount = 0
+for i in range(1, len(visited)):
+    o = visited[i]
+    pos = visited[i -1]
+    n = go[i - 1]
+    vis = [(pos, n)]
+    dr = look[n][0] 
+    dc = look[n][1]
+    while 0 <= pos[0] + dr < r and 0 <= pos[1] + dc < r:
+        dr = look[n][0] 
+        dc = look[n][1]
+        if data[pos[0] + dr][pos[1] + dc] == '#' or (pos[0] + dr,pos[1] + dc) == o:
+            n = (n + 1)%4
+        else:
+            pos = (pos[0] + dr, pos[1] + dc)
+        if (pos, n) in vis:
+            loopcount += 1
+            break
+        vis.append((pos, n))
+print('Answer 2:', loopcount)
