@@ -1,10 +1,9 @@
 from itertools import product
-def gen3(l):
-    return [''.join(map(str, digits)) for digits in product(range(3), repeat=l)]
-def gen2(l):
-    return [''.join(map(str, digits)) for digits in product(range(2), repeat=l)]
-
 data = [i.strip() for i in open('t.in')]
+
+def gen3(l): return [''.join(map(str, digits)) for digits in product(range(3), repeat=l)]
+def gen2(l): return [''.join(map(str, digits)) for digits in product(range(2), repeat=l)]
+
 ans = 0
 for line in data:
     tv, a = line.split(': ')
@@ -27,8 +26,6 @@ for line in data:
         if erg == tv:
             ans += erg 
             break
+
 print('Answer:', ans)
-
-        
-
 
