@@ -1,4 +1,4 @@
-data = open('9.in').read().strip()
+data = open('t.in').read().strip()
 
 m = 0
 disk = []
@@ -10,10 +10,8 @@ for i in data:
           disk.append('.')
    m += 1
 
-rest = []
 while '.' in disk:
     disk[disk.index('.')] = disk.pop(-1)
-    rest.append('.')
 
 ans1 = 0
 for i in range(len(disk)):
@@ -21,6 +19,11 @@ for i in range(len(disk)):
 print('Answer 1:', ans1)
 
 # part 2
+#        fid  startpos  length
+# files: {0:   (0,        2),       1: (5, 3),       2: (11, 1),        3: (15, 3)}
+# spaces:                [(2, 3),          (8, 3),           (12, 3)]
+#                   startpos length
+
 files = {}
 free =[]
 fid = 0
@@ -34,7 +37,8 @@ for i, x in enumerate(data):
         if x != 0:
             free.append((p, x))
     p += x
-
+print(files)
+print(free)
 while fid > 0:
     fid -= 1
     p1, s1 = files[fid]
