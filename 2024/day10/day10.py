@@ -22,8 +22,7 @@ for start in starts:
     for step in range(9):
         new = set() 
         for c in current:
-            for n in look(c):
-                new.add(n)
+            for n in look(c): new.add(n)
         current = []
         for n in new: current.append(n)
     ans1 += 1
@@ -31,7 +30,6 @@ print('Answer 1:', ans1)
 
 trails = []
 for start in starts: trails.append([start])
-
 for step in range(9):
     newtrails = []
     while trails:
