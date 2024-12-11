@@ -3,10 +3,11 @@ from functools import lru_cache
 stones = open('11.in').read().strip()
 stones = [int(i) for i in stones.split()]
 
+blinking = 75   # 25 for the first part, 75 for the second
 @lru_cache(maxsize=None)
 def cut(s, g):
     g += 1
-    if g == 76:
+    if g > blinking:  
         return 1
     if s == 0: return cut(1, g)
     if len(str(s)) % 2 == 0:
@@ -18,4 +19,4 @@ def cut(s, g):
 ans1 = 0
 for s in stones:
     ans1 += cut(s,0)
-print(ans1)
+print('Answer:', ans1)
