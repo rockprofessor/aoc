@@ -15,11 +15,5 @@ def cut(s, g, b):
         return cut(left, g, b) +  cut(right, g, b)
     return cut(s * 2024, g, b)
 
-ans1 = 0
-ans2 = 0
-for s in stones:
-    ans1 += cut(s, 0, 25)
-    ans2 += cut(s, 0, 75)
-
-print('Answer 1:', ans1)
-print('Answer 2:', ans2)
+print('Answer 1:', sum(cut(s, 0, 25) for s in stones))
+print('Answer 2:', sum(cut(s, 0, 75) for s in stones))
