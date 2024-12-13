@@ -2,7 +2,7 @@ data = open('13.in').read().strip().split('\n\n')
 
 ans1 = 0
 ans2 = 0
-machines = []
+
 for m in data:
     a, b, p = m.split('\n')
     ax = int(a.split()[2][2:-1])
