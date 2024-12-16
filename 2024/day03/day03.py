@@ -1,5 +1,5 @@
 import re
-data = open('3.in').read().strip()
+data = open('t.in').read().strip()
 
 ans1 = 0
 ans2 = 0
