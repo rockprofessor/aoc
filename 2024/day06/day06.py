@@ -1,4 +1,4 @@
-data = [i.strip() for i in open('6.in')]
+data = [i.strip() for i in open('t.in')]
 look = [(0, 1), (1, 0), (0, -1), (-1, 0)]
 directions = ['>', 'v', '<', '^']
 r = len(data)
@@ -20,7 +20,7 @@ while 0 <= pos[0]+look[lo][0] < r and 0 <= pos[1]+look[lo][1] < r:
         go.append(lo)
 print('Answer 1:', len(set(visited)))
 
-loopcount = 0
+lc = 0
 for i in range(1, len(visited)):
     o = visited[i]
     pos = visited[i -1]
@@ -28,6 +28,7 @@ for i in range(1, len(visited)):
     vis = [(pos, n)]
     dr = look[n][0] 
     dc = look[n][1]
+
     while 0 <= pos[0] + dr < r and 0 <= pos[1] + dc < r:
         dr = look[n][0] 
         dc = look[n][1]
@@ -36,7 +37,7 @@ for i in range(1, len(visited)):
         else:
             pos = (pos[0] + dr, pos[1] + dc)
         if (pos, n) in vis:
-            loopcount += 1
+            lc += 1
             break
         vis.append((pos, n))
-print('Answer 2:', loopcount)
+print('Answer 2:', lc)
