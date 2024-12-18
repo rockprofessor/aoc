@@ -1,5 +1,5 @@
 import copy
-file=open('day2.in').read().split(',')
+file=open('2.in').read().split(',')
 print(file)
 data=copy.deepcopy(file)
 data[1]='12'
