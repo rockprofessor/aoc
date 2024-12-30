@@ -1,40 +1,48 @@
-import numpy as np
-import copy
+data = [i.strip() for i in open('11.in')]
+R = len(data)
 
-data = [i.strip() for i in open('test.in')]
-for i in  range(len(data)):
-    data[i] = list(data[i])
+def step():
+    for _ in range(1):
+        for pos in map:
+            map[pos] += 1 
 
-for i in range(len(data)):
-    for j in range(len(data[0])):
-        data[i][j] = int(data[i][j])
+def check():
+    for pos in map:
+        if map[pos] > 9:
+            return True
+    return False
 
-data = np.array(data)
+def flashcheck():
+    for pos in map:
+        if map[pos] > 0:
+            return False
+    return True
 
-dx = [-1,-1,-1,0,0,0,1,1,1]
-dy = [-1,0,1,-1,0,1,-1,0,1]
+d = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
+map = {}
 
-steps = 10
-print(data)
-print()
-for k in range(steps+1):
-    new = copy.deepcopy(data)
+for r, row in enumerate(data):
+    for c, col in enumerate(row):
+        map[(r,c)] = int(data[r][c])
 
-    for i in range(len(data)):
-        for j in range(len(data[0])):
-            if new[i][j] == 9: new[i][j] = 0
-            else: new[i][j] += 1
-    data = copy.deepcopy(new)
-    
-    for i in range(len(data)):
-        for j in range(len(data[0])):
-            if data[i][j] == 0:
-                for d in range(9):
-                    if 0 <= i+dy[d] < 10 and 0 <= j+dx[d] < 10:
-                        if new[i+dy[d]][j+dx[d]] != 0: 
-                            if new[i+dy[d]][j+dx[d]] < 9: new[i+dy[d]][j+dx[d]] += 1
-                            else: new[i+dy[d]][j+dx[d]] = 0
+flash = 0
+i = 0
+while not flashcheck():
+    step()
+    while check():
+        for pos in map:
+            if map[pos] > 9:
+                flash += 1
+                map[pos] = 0
+                for n in range(8):
+                    dr, dc = d[n]
+                    look = (pos[0] + dr, pos[1] + dc)
+                    if look in map:
+                        if map[look] > 0:
+                            map[look] += 1
+    if i == 99:
+        print('Answer 1:', flash)
+    i += 1
+print('Answer 2:', i)
 
-    data = copy.deepcopy(new)
-    print(data)
-    print()
+
