@@ -1,7 +1,4 @@
-import copy
-
-file = [int(x) for x in open('day2.in').read().split(',')]
-file2 = copy.deepcopy(file)
+file = [int(x) for x in open('t.in').read().split(',')]
 
 file[1] = 12
 file[2] = 2
@@ -20,5 +17,7 @@ while file[i] != 99:
         file[out] = file[in1] * file[in2]
         i += 4
     elif cmd == 3:
+        continue
     elif cmd == 4:
+        continue
 print('Answer 1:', file[0])

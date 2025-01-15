@@ -1,0 +1,1444 @@
+digraph {
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	y02 [shape=ellipse]
+	x01 [shape=ellipse]
+	G1 [label=OR shape=box]
+	tnw [shape=ellipse]
+	y02 -> G1
+	x01 -> G1
+	tnw -> G1
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G1
+	kpj -> G1
+	z05 -> G1
+	x00 [shape=ellipse]
+	x03 [shape=ellipse]
+	G2 [label=OR shape=box]
+	fst [shape=ellipse]
+	x00 -> G2
+	x03 -> G2
+	fst -> G2
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G1
+	kpj -> G1
+	z05 -> G1
+	tgd [shape=ellipse]
+	rvg [shape=ellipse]
+	G2 [label=XOR shape=box]
+	z01 [shape=ellipse]
+	tgd -> G2
+	rvg -> G2
+	z01 -> G2
+	vdt [shape=ellipse]
+	tnw [shape=ellipse]
+	G3 [label=OR shape=box]
+	bfw [shape=ellipse]
+	vdt -> G3
+	tnw -> G3
+	bfw -> G3
+	bfw [shape=ellipse]
+	frj [shape=ellipse]
+	G4 [label=AND shape=box]
+	z10 [shape=ellipse]
+	bfw -> G4
+	frj -> G4
+	z10 -> G4
+	ffh [shape=ellipse]
+	nrd [shape=ellipse]
+	G5 [label=OR shape=box]
+	bqk [shape=ellipse]
+	ffh -> G5
+	nrd -> G5
+	bqk -> G5
+	y00 [shape=ellipse]
+	y03 [shape=ellipse]
+	G6 [label=AND shape=box]
+	djm [shape=ellipse]
+	y00 -> G6
+	y03 -> G6
+	djm -> G6
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G1
+	kpj -> G1
+	z05 -> G1
+	tgd [shape=ellipse]
+	rvg [shape=ellipse]
+	G2 [label=XOR shape=box]
+	z01 [shape=ellipse]
+	tgd -> G2
+	rvg -> G2
+	z01 -> G2
+	vdt [shape=ellipse]
+	tnw [shape=ellipse]
+	G3 [label=OR shape=box]
+	bfw [shape=ellipse]
+	vdt -> G3
+	tnw -> G3
+	bfw -> G3
+	bfw [shape=ellipse]
+	frj [shape=ellipse]
+	G4 [label=AND shape=box]
+	z10 [shape=ellipse]
+	bfw -> G4
+	frj -> G4
+	z10 -> G4
+	ffh [shape=ellipse]
+	nrd [shape=ellipse]
+	G5 [label=OR shape=box]
+	bqk [shape=ellipse]
+	ffh -> G5
+	nrd -> G5
+	bqk -> G5
+	y03 [shape=ellipse]
+	y00 [shape=ellipse]
+	G6 [label=OR shape=box]
+	psh [shape=ellipse]
+	y03 -> G6
+	y00 -> G6
+	psh -> G6
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G1
+	kpj -> G1
+	z05 -> G1
+	tgd [shape=ellipse]
+	rvg [shape=ellipse]
+	G2 [label=XOR shape=box]
+	z01 [shape=ellipse]
+	tgd -> G2
+	rvg -> G2
+	z01 -> G2
+	vdt [shape=ellipse]
+	tnw [shape=ellipse]
+	G3 [label=OR shape=box]
+	bfw [shape=ellipse]
+	vdt -> G3
+	tnw -> G3
+	bfw -> G3
+	bfw [shape=ellipse]
+	frj [shape=ellipse]
+	G4 [label=AND shape=box]
+	z10 [shape=ellipse]
+	bfw -> G4
+	frj -> G4
+	z10 -> G4
+	ffh [shape=ellipse]
+	nrd [shape=ellipse]
+	G5 [label=OR shape=box]
+	bqk [shape=ellipse]
+	ffh -> G5
+	nrd -> G5
+	bqk -> G5
+	bqk [shape=ellipse]
+	frj [shape=ellipse]
+	G6 [label=OR shape=box]
+	z08 [shape=ellipse]
+	bqk -> G6
+	frj -> G6
+	z08 -> G6
+	tnw [shape=ellipse]
+	fst [shape=ellipse]
+	G7 [label=OR shape=box]
+	frj [shape=ellipse]
+	tnw -> G7
+	fst -> G7
+	frj -> G7
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G1
+	kpj -> G1
+	z05 -> G1
+	tgd [shape=ellipse]
+	rvg [shape=ellipse]
+	G2 [label=XOR shape=box]
+	z01 [shape=ellipse]
+	tgd -> G2
+	rvg -> G2
+	z01 -> G2
+	vdt [shape=ellipse]
+	tnw [shape=ellipse]
+	G3 [label=OR shape=box]
+	bfw [shape=ellipse]
+	vdt -> G3
+	tnw -> G3
+	bfw -> G3
+	bfw [shape=ellipse]
+	frj [shape=ellipse]
+	G4 [label=AND shape=box]
+	z10 [shape=ellipse]
+	bfw -> G4
+	frj -> G4
+	z10 -> G4
+	ffh [shape=ellipse]
+	nrd [shape=ellipse]
+	G5 [label=OR shape=box]
+	bqk [shape=ellipse]
+	ffh -> G5
+	nrd -> G5
+	bqk -> G5
+	bqk [shape=ellipse]
+	frj [shape=ellipse]
+	G6 [label=OR shape=box]
+	z08 [shape=ellipse]
+	bqk -> G6
+	frj -> G6
+	z08 -> G6
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G7 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G7
+	tgd -> G7
+	z11 -> G7
+	bfw [shape=ellipse]
+	mjb [shape=ellipse]
+	G8 [label=XOR shape=box]
+	z00 [shape=ellipse]
+	bfw -> G8
+	mjb -> G8
+	z00 -> G8
+	x03 [shape=ellipse]
+	x00 [shape=ellipse]
+	G9 [label=OR shape=box]
+	vdt [shape=ellipse]
+	x03 -> G9
+	x00 -> G9
+	vdt -> G9
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G1
+	kpj -> G1
+	z05 -> G1
+	tgd [shape=ellipse]
+	rvg [shape=ellipse]
+	G2 [label=XOR shape=box]
+	z01 [shape=ellipse]
+	tgd -> G2
+	rvg -> G2
+	z01 -> G2
+	vdt [shape=ellipse]
+	tnw [shape=ellipse]
+	G3 [label=OR shape=box]
+	bfw [shape=ellipse]
+	vdt -> G3
+	tnw -> G3
+	bfw -> G3
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G1
+	kpj -> G1
+	z05 -> G1
+	tgd [shape=ellipse]
+	rvg [shape=ellipse]
+	G2 [label=XOR shape=box]
+	z01 [shape=ellipse]
+	tgd -> G2
+	rvg -> G2
+	z01 -> G2
+	bfw [shape=ellipse]
+	frj [shape=ellipse]
+	G3 [label=AND shape=box]
+	z10 [shape=ellipse]
+	bfw -> G3
+	frj -> G3
+	z10 -> G3
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G1
+	kpj -> G1
+	z05 -> G1
+	tgd [shape=ellipse]
+	rvg [shape=ellipse]
+	G2 [label=XOR shape=box]
+	z01 [shape=ellipse]
+	tgd -> G2
+	rvg -> G2
+	z01 -> G2
+	ffh [shape=ellipse]
+	nrd [shape=ellipse]
+	G3 [label=OR shape=box]
+	bqk [shape=ellipse]
+	ffh -> G3
+	nrd -> G3
+	bqk -> G3
+	bqk [shape=ellipse]
+	frj [shape=ellipse]
+	G4 [label=OR shape=box]
+	z08 [shape=ellipse]
+	bqk -> G4
+	frj -> G4
+	z08 -> G4
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G5 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G5
+	tgd -> G5
+	z11 -> G5
+	bfw [shape=ellipse]
+	mjb [shape=ellipse]
+	G6 [label=XOR shape=box]
+	z00 [shape=ellipse]
+	bfw -> G6
+	mjb -> G6
+	z00 -> G6
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G7 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G7
+	wpb -> G7
+	z02 -> G7
+	x04 [shape=ellipse]
+	y00 [shape=ellipse]
+	G8 [label=AND shape=box]
+	kjc [shape=ellipse]
+	x04 -> G8
+	y00 -> G8
+	kjc -> G8
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G1
+	kpj -> G1
+	z05 -> G1
+	tgd [shape=ellipse]
+	rvg [shape=ellipse]
+	G2 [label=XOR shape=box]
+	z01 [shape=ellipse]
+	tgd -> G2
+	rvg -> G2
+	z01 -> G2
+	ffh [shape=ellipse]
+	nrd [shape=ellipse]
+	G3 [label=OR shape=box]
+	bqk [shape=ellipse]
+	ffh -> G3
+	nrd -> G3
+	bqk -> G3
+	bqk [shape=ellipse]
+	frj [shape=ellipse]
+	G4 [label=OR shape=box]
+	z08 [shape=ellipse]
+	bqk -> G4
+	frj -> G4
+	z08 -> G4
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G5 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G5
+	tgd -> G5
+	z11 -> G5
+	bfw [shape=ellipse]
+	mjb [shape=ellipse]
+	G6 [label=XOR shape=box]
+	z00 [shape=ellipse]
+	bfw -> G6
+	mjb -> G6
+	z00 -> G6
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G7 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G7
+	wpb -> G7
+	z02 -> G7
+	djm [shape=ellipse]
+	pbm [shape=ellipse]
+	G8 [label=OR shape=box]
+	qhw [shape=ellipse]
+	djm -> G8
+	pbm -> G8
+	qhw -> G8
+	nrd [shape=ellipse]
+	vdt [shape=ellipse]
+	G9 [label=AND shape=box]
+	hwm [shape=ellipse]
+	nrd -> G9
+	vdt -> G9
+	hwm -> G9
+	kjc [shape=ellipse]
+	fst [shape=ellipse]
+	G10 [label=AND shape=box]
+	rvg [shape=ellipse]
+	kjc -> G10
+	fst -> G10
+	rvg -> G10
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G1
+	kpj -> G1
+	z05 -> G1
+	tgd [shape=ellipse]
+	rvg [shape=ellipse]
+	G2 [label=XOR shape=box]
+	z01 [shape=ellipse]
+	tgd -> G2
+	rvg -> G2
+	z01 -> G2
+	ffh [shape=ellipse]
+	nrd [shape=ellipse]
+	G3 [label=OR shape=box]
+	bqk [shape=ellipse]
+	ffh -> G3
+	nrd -> G3
+	bqk -> G3
+	bqk [shape=ellipse]
+	frj [shape=ellipse]
+	G4 [label=OR shape=box]
+	z08 [shape=ellipse]
+	bqk -> G4
+	frj -> G4
+	z08 -> G4
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G5 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G5
+	tgd -> G5
+	z11 -> G5
+	bfw [shape=ellipse]
+	mjb [shape=ellipse]
+	G6 [label=XOR shape=box]
+	z00 [shape=ellipse]
+	bfw -> G6
+	mjb -> G6
+	z00 -> G6
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G7 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G7
+	wpb -> G7
+	z02 -> G7
+	djm [shape=ellipse]
+	pbm [shape=ellipse]
+	G8 [label=OR shape=box]
+	qhw [shape=ellipse]
+	djm -> G8
+	pbm -> G8
+	qhw -> G8
+	nrd [shape=ellipse]
+	vdt [shape=ellipse]
+	G9 [label=AND shape=box]
+	hwm [shape=ellipse]
+	nrd -> G9
+	vdt -> G9
+	hwm -> G9
+	y04 [shape=ellipse]
+	y02 [shape=ellipse]
+	G10 [label=OR shape=box]
+	fgs [shape=ellipse]
+	y04 -> G10
+	y02 -> G10
+	fgs -> G10
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G1
+	kpj -> G1
+	z05 -> G1
+	tgd [shape=ellipse]
+	rvg [shape=ellipse]
+	G2 [label=XOR shape=box]
+	z01 [shape=ellipse]
+	tgd -> G2
+	rvg -> G2
+	z01 -> G2
+	ffh [shape=ellipse]
+	nrd [shape=ellipse]
+	G3 [label=OR shape=box]
+	bqk [shape=ellipse]
+	ffh -> G3
+	nrd -> G3
+	bqk -> G3
+	bqk [shape=ellipse]
+	frj [shape=ellipse]
+	G4 [label=OR shape=box]
+	z08 [shape=ellipse]
+	bqk -> G4
+	frj -> G4
+	z08 -> G4
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G5 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G5
+	tgd -> G5
+	z11 -> G5
+	bfw [shape=ellipse]
+	mjb [shape=ellipse]
+	G6 [label=XOR shape=box]
+	z00 [shape=ellipse]
+	bfw -> G6
+	mjb -> G6
+	z00 -> G6
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G7 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G7
+	wpb -> G7
+	z02 -> G7
+	djm [shape=ellipse]
+	pbm [shape=ellipse]
+	G8 [label=OR shape=box]
+	qhw [shape=ellipse]
+	djm -> G8
+	pbm -> G8
+	qhw -> G8
+	nrd [shape=ellipse]
+	vdt [shape=ellipse]
+	G9 [label=AND shape=box]
+	hwm [shape=ellipse]
+	nrd -> G9
+	vdt -> G9
+	hwm -> G9
+	y01 [shape=ellipse]
+	x02 [shape=ellipse]
+	G10 [label=AND shape=box]
+	pbm [shape=ellipse]
+	y01 -> G10
+	x02 -> G10
+	pbm -> G10
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G1
+	kpj -> G1
+	z05 -> G1
+	tgd [shape=ellipse]
+	rvg [shape=ellipse]
+	G2 [label=XOR shape=box]
+	z01 [shape=ellipse]
+	tgd -> G2
+	rvg -> G2
+	z01 -> G2
+	ffh [shape=ellipse]
+	nrd [shape=ellipse]
+	G3 [label=OR shape=box]
+	bqk [shape=ellipse]
+	ffh -> G3
+	nrd -> G3
+	bqk -> G3
+	bqk [shape=ellipse]
+	frj [shape=ellipse]
+	G4 [label=OR shape=box]
+	z08 [shape=ellipse]
+	bqk -> G4
+	frj -> G4
+	z08 -> G4
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G5 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G5
+	tgd -> G5
+	z11 -> G5
+	bfw [shape=ellipse]
+	mjb [shape=ellipse]
+	G6 [label=XOR shape=box]
+	z00 [shape=ellipse]
+	bfw -> G6
+	mjb -> G6
+	z00 -> G6
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G7 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G7
+	wpb -> G7
+	z02 -> G7
+	djm [shape=ellipse]
+	pbm [shape=ellipse]
+	G8 [label=OR shape=box]
+	qhw [shape=ellipse]
+	djm -> G8
+	pbm -> G8
+	qhw -> G8
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G1
+	kpj -> G1
+	z05 -> G1
+	tgd [shape=ellipse]
+	rvg [shape=ellipse]
+	G2 [label=XOR shape=box]
+	z01 [shape=ellipse]
+	tgd -> G2
+	rvg -> G2
+	z01 -> G2
+	ffh [shape=ellipse]
+	nrd [shape=ellipse]
+	G3 [label=OR shape=box]
+	bqk [shape=ellipse]
+	ffh -> G3
+	nrd -> G3
+	bqk -> G3
+	bqk [shape=ellipse]
+	frj [shape=ellipse]
+	G4 [label=OR shape=box]
+	z08 [shape=ellipse]
+	bqk -> G4
+	frj -> G4
+	z08 -> G4
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G5 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G5
+	tgd -> G5
+	z11 -> G5
+	bfw [shape=ellipse]
+	mjb [shape=ellipse]
+	G6 [label=XOR shape=box]
+	z00 [shape=ellipse]
+	bfw -> G6
+	mjb -> G6
+	z00 -> G6
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G7 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G7
+	wpb -> G7
+	z02 -> G7
+	nrd [shape=ellipse]
+	vdt [shape=ellipse]
+	G8 [label=AND shape=box]
+	hwm [shape=ellipse]
+	nrd -> G8
+	vdt -> G8
+	hwm -> G8
+	ntg [shape=ellipse]
+	kjc [shape=ellipse]
+	G9 [label=OR shape=box]
+	kwq [shape=ellipse]
+	ntg -> G9
+	kjc -> G9
+	kwq -> G9
+	psh [shape=ellipse]
+	fgs [shape=ellipse]
+	G10 [label=XOR shape=box]
+	tgd [shape=ellipse]
+	psh -> G10
+	fgs -> G10
+	tgd -> G10
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G1
+	kpj -> G1
+	z05 -> G1
+	tgd [shape=ellipse]
+	rvg [shape=ellipse]
+	G2 [label=XOR shape=box]
+	z01 [shape=ellipse]
+	tgd -> G2
+	rvg -> G2
+	z01 -> G2
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G1
+	kpj -> G1
+	z05 -> G1
+	ffh [shape=ellipse]
+	nrd [shape=ellipse]
+	G2 [label=OR shape=box]
+	bqk [shape=ellipse]
+	ffh -> G2
+	nrd -> G2
+	bqk -> G2
+	bqk [shape=ellipse]
+	frj [shape=ellipse]
+	G3 [label=OR shape=box]
+	z08 [shape=ellipse]
+	bqk -> G3
+	frj -> G3
+	z08 -> G3
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G4 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G4
+	tgd -> G4
+	z11 -> G4
+	bfw [shape=ellipse]
+	mjb [shape=ellipse]
+	G5 [label=XOR shape=box]
+	z00 [shape=ellipse]
+	bfw -> G5
+	mjb -> G5
+	z00 -> G5
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G6 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G6
+	wpb -> G6
+	z02 -> G6
+	nrd [shape=ellipse]
+	vdt [shape=ellipse]
+	G7 [label=AND shape=box]
+	hwm [shape=ellipse]
+	nrd -> G7
+	vdt -> G7
+	hwm -> G7
+	ntg [shape=ellipse]
+	kjc [shape=ellipse]
+	G8 [label=OR shape=box]
+	kwq [shape=ellipse]
+	ntg -> G8
+	kjc -> G8
+	kwq -> G8
+	qhw [shape=ellipse]
+	tgd [shape=ellipse]
+	G9 [label=XOR shape=box]
+	z09 [shape=ellipse]
+	qhw -> G9
+	tgd -> G9
+	z09 -> G9
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G1
+	kpj -> G1
+	z05 -> G1
+	ffh [shape=ellipse]
+	nrd [shape=ellipse]
+	G2 [label=OR shape=box]
+	bqk [shape=ellipse]
+	ffh -> G2
+	nrd -> G2
+	bqk -> G2
+	bqk [shape=ellipse]
+	frj [shape=ellipse]
+	G3 [label=OR shape=box]
+	z08 [shape=ellipse]
+	bqk -> G3
+	frj -> G3
+	z08 -> G3
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G4 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G4
+	tgd -> G4
+	z11 -> G4
+	bfw [shape=ellipse]
+	mjb [shape=ellipse]
+	G5 [label=XOR shape=box]
+	z00 [shape=ellipse]
+	bfw -> G5
+	mjb -> G5
+	z00 -> G5
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G6 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G6
+	wpb -> G6
+	z02 -> G6
+	nrd [shape=ellipse]
+	vdt [shape=ellipse]
+	G7 [label=AND shape=box]
+	hwm [shape=ellipse]
+	nrd -> G7
+	vdt -> G7
+	hwm -> G7
+	ntg [shape=ellipse]
+	kjc [shape=ellipse]
+	G8 [label=OR shape=box]
+	kwq [shape=ellipse]
+	ntg -> G8
+	kjc -> G8
+	kwq -> G8
+	pbm [shape=ellipse]
+	djm [shape=ellipse]
+	G9 [label=OR shape=box]
+	kpj [shape=ellipse]
+	pbm -> G9
+	djm -> G9
+	kpj -> G9
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G1
+	kpj -> G1
+	z05 -> G1
+	ffh [shape=ellipse]
+	nrd [shape=ellipse]
+	G2 [label=OR shape=box]
+	bqk [shape=ellipse]
+	ffh -> G2
+	nrd -> G2
+	bqk -> G2
+	bqk [shape=ellipse]
+	frj [shape=ellipse]
+	G3 [label=OR shape=box]
+	z08 [shape=ellipse]
+	bqk -> G3
+	frj -> G3
+	z08 -> G3
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G4 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G4
+	tgd -> G4
+	z11 -> G4
+	bfw [shape=ellipse]
+	mjb [shape=ellipse]
+	G5 [label=XOR shape=box]
+	z00 [shape=ellipse]
+	bfw -> G5
+	mjb -> G5
+	z00 -> G5
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G6 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G6
+	wpb -> G6
+	z02 -> G6
+	nrd [shape=ellipse]
+	vdt [shape=ellipse]
+	G7 [label=AND shape=box]
+	hwm [shape=ellipse]
+	nrd -> G7
+	vdt -> G7
+	hwm -> G7
+	ntg [shape=ellipse]
+	kjc [shape=ellipse]
+	G8 [label=OR shape=box]
+	kwq [shape=ellipse]
+	ntg -> G8
+	kjc -> G8
+	kwq -> G8
+	x03 [shape=ellipse]
+	y03 [shape=ellipse]
+	G9 [label=XOR shape=box]
+	ffh [shape=ellipse]
+	x03 -> G9
+	y03 -> G9
+	ffh -> G9
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G1
+	kpj -> G1
+	z05 -> G1
+	ffh [shape=ellipse]
+	nrd [shape=ellipse]
+	G2 [label=OR shape=box]
+	bqk [shape=ellipse]
+	ffh -> G2
+	nrd -> G2
+	bqk -> G2
+	bqk [shape=ellipse]
+	frj [shape=ellipse]
+	G3 [label=OR shape=box]
+	z08 [shape=ellipse]
+	bqk -> G3
+	frj -> G3
+	z08 -> G3
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G4 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G4
+	tgd -> G4
+	z11 -> G4
+	bfw [shape=ellipse]
+	mjb [shape=ellipse]
+	G5 [label=XOR shape=box]
+	z00 [shape=ellipse]
+	bfw -> G5
+	mjb -> G5
+	z00 -> G5
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G6 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G6
+	wpb -> G6
+	z02 -> G6
+	nrd [shape=ellipse]
+	vdt [shape=ellipse]
+	G7 [label=AND shape=box]
+	hwm [shape=ellipse]
+	nrd -> G7
+	vdt -> G7
+	hwm -> G7
+	ntg [shape=ellipse]
+	kjc [shape=ellipse]
+	G8 [label=OR shape=box]
+	kwq [shape=ellipse]
+	ntg -> G8
+	kjc -> G8
+	kwq -> G8
+	x00 [shape=ellipse]
+	y04 [shape=ellipse]
+	G9 [label=XOR shape=box]
+	ntg [shape=ellipse]
+	x00 -> G9
+	y04 -> G9
+	ntg -> G9
+	ntg [shape=ellipse]
+	fgs [shape=ellipse]
+	G0 [label=XOR shape=box]
+	mjb [shape=ellipse]
+	ntg -> G0
+	fgs -> G0
+	mjb -> G0
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G0 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G0
+	kpj -> G0
+	z05 -> G0
+	ffh [shape=ellipse]
+	nrd [shape=ellipse]
+	G1 [label=OR shape=box]
+	bqk [shape=ellipse]
+	ffh -> G1
+	nrd -> G1
+	bqk -> G1
+	bqk [shape=ellipse]
+	frj [shape=ellipse]
+	G2 [label=OR shape=box]
+	z08 [shape=ellipse]
+	bqk -> G2
+	frj -> G2
+	z08 -> G2
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G3 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G3
+	tgd -> G3
+	z11 -> G3
+	bfw [shape=ellipse]
+	mjb [shape=ellipse]
+	G4 [label=XOR shape=box]
+	z00 [shape=ellipse]
+	bfw -> G4
+	mjb -> G4
+	z00 -> G4
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G0 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G0
+	kpj -> G0
+	z05 -> G0
+	ffh [shape=ellipse]
+	nrd [shape=ellipse]
+	G1 [label=OR shape=box]
+	bqk [shape=ellipse]
+	ffh -> G1
+	nrd -> G1
+	bqk -> G1
+	bqk [shape=ellipse]
+	frj [shape=ellipse]
+	G2 [label=OR shape=box]
+	z08 [shape=ellipse]
+	bqk -> G2
+	frj -> G2
+	z08 -> G2
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G3 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G3
+	tgd -> G3
+	z11 -> G3
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G4 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G4
+	wpb -> G4
+	z02 -> G4
+	nrd [shape=ellipse]
+	vdt [shape=ellipse]
+	G5 [label=AND shape=box]
+	hwm [shape=ellipse]
+	nrd -> G5
+	vdt -> G5
+	hwm -> G5
+	ntg [shape=ellipse]
+	kjc [shape=ellipse]
+	G6 [label=OR shape=box]
+	kwq [shape=ellipse]
+	ntg -> G6
+	kjc -> G6
+	kwq -> G6
+	kwq [shape=ellipse]
+	kpj [shape=ellipse]
+	G0 [label=OR shape=box]
+	z05 [shape=ellipse]
+	kwq -> G0
+	kpj -> G0
+	z05 -> G0
+	ffh [shape=ellipse]
+	nrd [shape=ellipse]
+	G0 [label=OR shape=box]
+	bqk [shape=ellipse]
+	ffh -> G0
+	nrd -> G0
+	bqk -> G0
+	bqk [shape=ellipse]
+	frj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z08 [shape=ellipse]
+	bqk -> G1
+	frj -> G1
+	z08 -> G1
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G2 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G2
+	tgd -> G2
+	z11 -> G2
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G3 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G3
+	wpb -> G3
+	z02 -> G3
+	nrd [shape=ellipse]
+	vdt [shape=ellipse]
+	G4 [label=AND shape=box]
+	hwm [shape=ellipse]
+	nrd -> G4
+	vdt -> G4
+	hwm -> G4
+	bfw [shape=ellipse]
+	bqk [shape=ellipse]
+	G5 [label=OR shape=box]
+	z06 [shape=ellipse]
+	bfw -> G5
+	bqk -> G5
+	z06 -> G5
+	nrd [shape=ellipse]
+	fgs [shape=ellipse]
+	G6 [label=XOR shape=box]
+	wpb [shape=ellipse]
+	nrd -> G6
+	fgs -> G6
+	wpb -> G6
+	frj [shape=ellipse]
+	qhw [shape=ellipse]
+	G7 [label=XOR shape=box]
+	z04 [shape=ellipse]
+	frj -> G7
+	qhw -> G7
+	z04 -> G7
+	ffh [shape=ellipse]
+	nrd [shape=ellipse]
+	G0 [label=OR shape=box]
+	bqk [shape=ellipse]
+	ffh -> G0
+	nrd -> G0
+	bqk -> G0
+	bqk [shape=ellipse]
+	frj [shape=ellipse]
+	G1 [label=OR shape=box]
+	z08 [shape=ellipse]
+	bqk -> G1
+	frj -> G1
+	z08 -> G1
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G2 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G2
+	tgd -> G2
+	z11 -> G2
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G3 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G3
+	wpb -> G3
+	z02 -> G3
+	nrd [shape=ellipse]
+	vdt [shape=ellipse]
+	G4 [label=AND shape=box]
+	hwm [shape=ellipse]
+	nrd -> G4
+	vdt -> G4
+	hwm -> G4
+	bfw [shape=ellipse]
+	bqk [shape=ellipse]
+	G5 [label=OR shape=box]
+	z06 [shape=ellipse]
+	bfw -> G5
+	bqk -> G5
+	z06 -> G5
+	nrd [shape=ellipse]
+	fgs [shape=ellipse]
+	G6 [label=XOR shape=box]
+	wpb [shape=ellipse]
+	nrd -> G6
+	fgs -> G6
+	wpb -> G6
+	bqk [shape=ellipse]
+	frj [shape=ellipse]
+	G7 [label=OR shape=box]
+	z07 [shape=ellipse]
+	bqk -> G7
+	frj -> G7
+	z07 -> G7
+	y03 [shape=ellipse]
+	x01 [shape=ellipse]
+	G8 [label=OR shape=box]
+	nrd [shape=ellipse]
+	y03 -> G8
+	x01 -> G8
+	nrd -> G8
+	ffh [shape=ellipse]
+	nrd [shape=ellipse]
+	G0 [label=OR shape=box]
+	bqk [shape=ellipse]
+	ffh -> G0
+	nrd -> G0
+	bqk -> G0
+	bqk [shape=ellipse]
+	frj [shape=ellipse]
+	G0 [label=OR shape=box]
+	z08 [shape=ellipse]
+	bqk -> G0
+	frj -> G0
+	z08 -> G0
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G0 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G0
+	tgd -> G0
+	z11 -> G0
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G1 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G1
+	wpb -> G1
+	z02 -> G1
+	nrd [shape=ellipse]
+	vdt [shape=ellipse]
+	G2 [label=AND shape=box]
+	hwm [shape=ellipse]
+	nrd -> G2
+	vdt -> G2
+	hwm -> G2
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G0 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G0
+	tgd -> G0
+	z11 -> G0
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G1 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G1
+	wpb -> G1
+	z02 -> G1
+	bfw [shape=ellipse]
+	bqk [shape=ellipse]
+	G2 [label=OR shape=box]
+	z06 [shape=ellipse]
+	bfw -> G2
+	bqk -> G2
+	z06 -> G2
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G0 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G0
+	tgd -> G0
+	z11 -> G0
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G1 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G1
+	wpb -> G1
+	z02 -> G1
+	nrd [shape=ellipse]
+	fgs [shape=ellipse]
+	G2 [label=XOR shape=box]
+	wpb [shape=ellipse]
+	nrd -> G2
+	fgs -> G2
+	wpb -> G2
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G0 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G0
+	tgd -> G0
+	z11 -> G0
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G1 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G1
+	wpb -> G1
+	z02 -> G1
+	bqk [shape=ellipse]
+	frj [shape=ellipse]
+	G2 [label=OR shape=box]
+	z07 [shape=ellipse]
+	bqk -> G2
+	frj -> G2
+	z07 -> G2
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G0 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G0
+	tgd -> G0
+	z11 -> G0
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G1 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G1
+	wpb -> G1
+	z02 -> G1
+	hwm [shape=ellipse]
+	bqk [shape=ellipse]
+	G2 [label=AND shape=box]
+	z03 [shape=ellipse]
+	hwm -> G2
+	bqk -> G2
+	z03 -> G2
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G0 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G0
+	tgd -> G0
+	z11 -> G0
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G1 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G1
+	wpb -> G1
+	z02 -> G1
+	tgd [shape=ellipse]
+	rvg [shape=ellipse]
+	G2 [label=XOR shape=box]
+	z12 [shape=ellipse]
+	tgd -> G2
+	rvg -> G2
+	z12 -> G2
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G0 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G0
+	tgd -> G0
+	z11 -> G0
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G1 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G1
+	wpb -> G1
+	z02 -> G1
+	tnw [shape=ellipse]
+	pbm [shape=ellipse]
+	G2 [label=OR shape=box]
+	gnj [shape=ellipse]
+	tnw -> G2
+	pbm -> G2
+	gnj -> G2
+	gnj [shape=ellipse]
+	tgd [shape=ellipse]
+	G0 [label=AND shape=box]
+	z11 [shape=ellipse]
+	gnj -> G0
+	tgd -> G0
+	z11 -> G0
+	gnj [shape=ellipse]
+	wpb [shape=ellipse]
+	G0 [label=AND shape=box]
+	z02 [shape=ellipse]
+	gnj -> G0
+	wpb -> G0
+	z02 -> G0
+}

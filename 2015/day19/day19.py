@@ -38,24 +38,4 @@ for i in rep:
 
 print('Answer 1:', len(molec))
 
-mol = [['e']]
-new = [] 
-mm = divide(mm)     
-
-c = 0
-while mol:
-    x = mol.pop()
-    for i, a in enumerate(x):
-        if a in rep:
-            for b in rep[a]:
-                n= x[:i] + divide(b) + x[i+1:]
-                if len(n) <= len(mm):
-                    new.append(n)
-    if len(mol) == 0:
-        c += 1
-        print(c)
-        if mm in new:
-            print('Answer 2:', c)
-        else:
-            mol = copy.deepcopy(new)
-            new = []
+print(mm)
