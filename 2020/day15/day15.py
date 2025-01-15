@@ -1,16 +1,16 @@
-data = [0, 14, 1, 3, 7, 9]
 spoken = {}
 
-for i, x in enumerate(data):
+for i, x in enumerate([0, 14, 1, 3, 7]):
     spoken[x] = i
 
-for i in range(30000000 - len(data)):
-    if i == 2014:
-        print('Answer 1:', data[-1])
-
-    if data[-1] in spoken:
-        data.append(len(data) - spoken[data[-1]] - 1)
+last = 9
+for i in range(6, 30000000):
+    if i == 2020:
+        print('Answer 1:', last)
+    secondlast = last
+    if last in spoken:
+        last = (i - spoken[last] - 1)
     else:
-        data.append(0)
-    spoken[data[-2]] = len(data) - 2
-print('Answer 2:', data[-1])
+        last = (0)
+    spoken[secondlast] = i - 1
+print('Answer 2:',last) 
