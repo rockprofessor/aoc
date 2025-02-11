@@ -1,5 +1,5 @@
 import copy
-data=[i.strip() for i in open('day5.in')]
+data=[i.strip() for i in open('5.in')]
 
 instr=[]
 for t in data:

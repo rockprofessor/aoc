@@ -12,7 +12,7 @@ while file[i] != 99:
     in1 = file[i + 1]
     in2 = file[i + 2]
     out = file[i + 3]
-    
+ 
     if cmd == 1: file[out] = file[in1] + file[in2]
     elif cmd == 2: file[out] = file[in1] * file[in2]
     i += 4
@@ -39,7 +39,7 @@ while answer != 19690720:
             file2[out] = file2[in1] + file2[in2]
         elif cmd == 2:
             file2[out] = file2[in1] * file2[in2]
-     
     answer = file2[0]
+
 print('Answer 2:', 100 * noun + verb)
 print('noun:', noun, 'verb:', verb)
