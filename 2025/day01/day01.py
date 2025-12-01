@@ -25,5 +25,5 @@ for m in data:
     if d == 0:
         p1 += 1
 
-print('Part 1:', p1)
-print('Part 2:', p1 + p2)
+print('Answer 1:', p1)
+print('Answer 2:', p1 + p2)
