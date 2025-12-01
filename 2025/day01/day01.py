@@ -20,6 +20,7 @@ for m in data:
         d -= c
         if d < 0 and d_old > 0:
             p2 += 1
+
     d %= 100
 
     if d == 0:
