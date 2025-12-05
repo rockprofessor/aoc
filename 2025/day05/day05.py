@@ -1,6 +1,6 @@
 ranges, ids = open('5.in').read().strip().split('\n\n')
 
-ranges = [tuple(map(int, r.split('-'))) for r in ranges.splitlines()]
+ranges = sorted([tuple(map(int, r.split('-'))) for r in ranges.splitlines()])
 ids = list(map(int, ids.splitlines()))
 
 c1 = 0
@@ -15,7 +15,6 @@ for i in ids:
 print('Answer 1:', c1)
 
 c2 = 0
-ranges = sorted(ranges, key = lambda x: x[0])
 ref = 0
 
 while ranges: 
