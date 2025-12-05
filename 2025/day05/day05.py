@@ -19,10 +19,10 @@ ref = 0
 
 while ranges: 
     i = max(ref, ranges[0][0])
-    r = ranges[0]
-    if i <= r[1]:
-        c2 += r[1] + 1 - i
-        ref = r[1] + 1
+    (lo, hi) = ranges[0]
+    if i <= hi:
+        c2 += hi + 1 - i
+        ref = hi + 1
     ranges.pop(0)
 
 print('Answer 2:', c2)
