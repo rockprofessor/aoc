@@ -69,5 +69,3 @@ while w:
         c2 += p
 
 print('Answer 2:', c2)
-
-
