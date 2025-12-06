@@ -5,7 +5,7 @@ data = [i.strip() for i in open('t.in')]
 data = open('t.in').read().strip()
 
 #read grid
-grid = {(x,y): c for y, row in enumerate(open('in.txt')) for x, c in enumerate(row)}
+grid = {(x,y): c for y, row in enumerate(open('t.in')) for x, c in enumerate(row)}
 
 # seeds: 1778931867 1436999653 3684516104
 # 
