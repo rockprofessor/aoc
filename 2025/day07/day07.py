@@ -1,31 +1,65 @@
-#read line by line
-data = [i.strip() for i in open('t.in')]
+# (col, row)
+grid = {(x,y): c for y, row in enumerate(open('7.in')) for x, c in enumerate(row)}
+for field in grid:
+    if grid[field] == 'S':
+        start = field
 
-#read one line
-data = open('t.in').read().strip()
+R = (max(grid.keys(), key=lambda x: x[1]))[1]
+beam = [start]
+c1 = 0
+c2 = 0
 
-#read grid
-grid = {(x,y): c for y, row in enumerate(open('t.in')) for x, c in enumerate(row)}
+i = 0
+while i < R:
+    newbeam = []
+    while beam:
+        pos = beam.pop(0)
+        look = (pos[0], pos[1] + 1)
+        if look in grid:
+            if grid[look] == '^':
+                newbeam.append((look[0] - 1, look[1]))
+                newbeam.append((look[0] + 1, look[1]))
+                c1 += 1
+            else:
+                newbeam.append(look)
+        else:
+            go = False
 
-# seeds: 1778931867 1436999653 3684516104
-# 
-# seed-to-soil map:
-# 1965922922 2387203602 59808406
-# 2540447436 434094583 220346698
-# 2217992666 1677013102 149631368
-# 
-# soil-to-fertilizer map:
-# 974611207 822914672 41736646
-# 1617020803 484683369 227984726
-# 2936246728 1897199618 22236339
-# 
-# fertilizer-to-water map:
-# 2256462238 272868806 222756596
-# 2883874475 1945255196 178320531
-# 1025753868 1262393928 220069640
-# ...
+    for n in set(newbeam):
+        beam.append(n)
+    i += 1
 
-seeds, *changes = open('5.in').read().split('\n\n')
-seeds = list(map(int, seeds.split(":")[1].split()))
+print('Answer 1:', c1)
 
 
+beam2 = {start: 1}
+i = 0
+while i < R:
+    newbeam = {}
+    while beam2:
+        look, numb = beam2.popitem()
+        look = (look[0], look[1] + 1)
+        if look in grid:
+            if grid[look] == '^':
+                if (look[0] - 1, look[1]) in newbeam:
+                    newbeam[(look[0] - 1, look[1])] += numb
+                else:
+                    newbeam[(look[0] - 1, look[1])] = numb
+                if (look[0] + 1, look[1]) in newbeam:
+                    newbeam[(look[0] + 1, look[1])] += numb
+                else:
+                    newbeam[(look[0] + 1, look[1])] = numb
+            else:
+                if look in newbeam:
+                    newbeam[look] += numb
+                else:
+                    newbeam[look] = numb
+    for n in newbeam:
+        beam2[n] = newbeam[n]
+    i += 1
+
+c2 = 0
+for k in newbeam:
+    c2 += newbeam[k]
+
+print('Answer 2:', c2)
