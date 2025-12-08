@@ -1,7 +1,4 @@
-data = [i.strip() for i in open('8.in')]
-
-for i in range(len(data)):
-    data[i] = [int(j) for j in data[i].split(',')]
+data = [list(map(int, line.split(','))) for line in open('8.in')]
 
 def dist(a, b):
     return (a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2 + (a[2] - b[2]) ** 2
@@ -24,32 +21,26 @@ for i in range(5000):
     while networks:
         look = networks.pop()
         if A in look and B in look:
-            for l in look:
-                new.append(l)
+            new.extend(look)
             found = True
 
         elif A in look and B not in look:
             look.append(B)
             for l in look:
-                new.append(l)
+            new.extend(look)
             found = True
 
         elif B in look and A not in look:
             look.append(A)
-            for l in look:
-                new.append(l)
+            new.extend(look)
             found = True
 
-        else:
-            net_temp.append(look)
+        else: net_temp.append(look)
 
-    for n in net_temp:
-        networks.append(n)
+    networks.extend((net_temp))
 
-    if found:
-        networks.append(list(set(new)))
-    else:
-        networks.append([A, B])
+    if found: networks.append(list(set(new)))
+    else: networks.append([A, B])
 
     if len(networks[0]) == len(data):
         print('Answer 2:', data[A][0] * data[B][0])
@@ -59,8 +50,7 @@ for i in range(5000):
         size = [len(n) for n in networks]
         size.sort(reverse = True)
         p = 1
-        for z in range(3):
-           p *= size[z]
+        for z in range(3): p *= size[z]
         print('Answer 1:', p)
 
 
