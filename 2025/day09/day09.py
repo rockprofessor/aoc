@@ -1,9 +1,8 @@
+import math
+
 # (col, row)
 data = [tuple(int(x.strip()) for x in line.split(',')) for line in open('9.in')]
 grid = []
-
-C = max(int(c) for (c, r) in data) + 1
-R = max(int(r) for (c, r) in data) + 1
 
 area_max = 0
 for i in range(len(data) - 1):
@@ -14,61 +13,55 @@ for i in range(len(data) - 1):
 
 print('Answer 1:', area_max)
 
-data.append(data[0])
-def printgrid():
-    for r in range(R + 1):
-        line = ''
-        for c in range(C + 2):
-            if (c, r) in grid:
-                line += 'X'
-            else:
-                line += '.'
-        print(line)
+areas = []
+edges = []
 
 for i in range(len(data) - 1):
-    (a,b) = data[i]
-    (c,d) = data[i + 1]
-    grid.append((a, b))
-    grid.append((c, d))
+    for j in range(len(data)):
+        area = (abs(data[i][0] - data[j][0]) + 1) * (abs(data[i][1] - data[j][1]) + 1)
+        a = min(data[i][0], data[j][0]) # col min
+        b = min(data[i][1], data[j][1]) # row min
+        c = max(data[i][0], data[j][0]) # col max
+        d = max(data[i][1], data[j][1]) # row max
+        if a != c and b != d:
+            areas.append(((a, b), (c, d), area))
 
-    if a == c:
-        for k in range(min(b, d) + 1, max(b, d)):
-            grid.append((a, k))
-    else:
-        for k in range(min(a, c) + 1, max(a, c)):
-            grid.append((k, b))
+data.append(data[0])
 
+for i in range(len(data) - 1):
+    (a, b) = data[i]
+    (c, d) = data[i + 1]
+    edges.append(((a, b), (c, d)))
 
-# for r in range(1, R + 1):
-#     inside = False
-#     side = 'n'
-#     for c in range(1, C + 1):
-#         u = (c, r + 1) in grid
-#         d = (c, r - 1) in grid
-#         if (c, r) in grid:              # stehen auf X
-#             if u and d:                 # cross line
-#                 inside = not inside
-#             elif u:                     # ecke up
-#                 if side == 'n':
-#                     side = 'u'
-#                 elif side == 'u':
-#                     side = 'n'
-#                 else:
-#                     inside = not inside
-# 
-#             elif d:   # ecke down
-#                 if side == 'n':
-#                     side = 'd'
-#                 elif side == 'd':
-#                     side = 'n'
-#                 else:
-#                     inside = not inside
-#         else:   # stehen auf .
-#             if inside:
-#                 grid.append((c, r))
+areas = list(set(areas))
+areas = sorted(areas, key = lambda x: x[2], reverse = True)
 
-area_max = 0
+def edge_sort(edge):
+    p1, p2 = edge
+    if p1[0] > p2[0] or (p1[0] == p2[0] and p1[1] > p2[1]):
+        return (p2, p1)
+    return (p1, p2)
 
-print('Answer 2:', area_max)
+edges = list(set(edges))
+edges = [edge_sort(e) for e in edges]
+edges = sorted(edges, key = lambda p: math.dist(p[0], p[1]), reverse = True)
 
+for ((a, b), (c, d), area) in areas:
+    go = True
+    for (x, y) in data:
+        if a < x < c and b < y < d:
+            go = False
+            break
+    go2 = True
+    if go:
+        for ((e, f), (g, h)) in edges:
+            if e == g:
+                if a < e < c and f <= b and h >= d:
+                    go2 = False
+            else:
+                if b < f < d and e <= a and g >= c:
+                    go2 = False
+        if go2:
+            print('Answer 2:', ((a, b), (c, d), area))
+            break
 
