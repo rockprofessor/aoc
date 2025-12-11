@@ -1,5 +1,6 @@
 help/
 *.in
+*.md
 todo
 get_input.inf
 *.inf
