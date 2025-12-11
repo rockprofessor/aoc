@@ -1,31 +1,77 @@
-#read line by line
-data = [i.strip() for i in open('t.in')]
+from itertools import combinations
+import sympy as sp
+import pulp
 
-#read one line
-data = open('t.in').read().strip()
+machines = [line.split() for line in [i.strip() for i in open('10.in')]]
 
-#read grid
-grid = {(x,y): c for y, row in enumerate(open('t.in')) for x, c in enumerate(row)}
+def xor(a,b):
+    erg = []
+    for i in range(len(a)):
+        if a[i] == b[i]:
+            erg.append(0)
+        else: 
+            erg.append(1)
+    return erg
 
-# seeds: 1778931867 1436999653 3684516104
-# 
-# seed-to-soil map:
-# 1965922922 2387203602 59808406
-# 2540447436 434094583 220346698
-# 2217992666 1677013102 149631368
-# 
-# soil-to-fertilizer map:
-# 974611207 822914672 41736646
-# 1617020803 484683369 227984726
-# 2936246728 1897199618 22236339
-# 
-# fertilizer-to-water map:
-# 2256462238 272868806 222756596
-# 2883874475 1945255196 178320531
-# 1025753868 1262393928 220069640
-# ...
+ans = 0
+ans2 = 0
+for m in machines:
+    ind = m.pop(0)[1 : -1]
+    buttons = m[: -1]
+    jolt = eval('[' + m[-1][1:-1] + ']')
+    B = []
+    combos = []
 
-seeds, *changes = open('5.in').read().split('\n\n')
-seeds = list(map(int, seeds.split(":")[1].split()))
+    indi = []
+    for i in range(len(ind)):
+        if ind[i] == '.':
+            indi.append(0)
+        else:
+            indi.append(1)
 
+    state = [0  for _ in range(len(indi))]
 
+    for b in buttons:
+        B.append(eval('[' + b[1 : -1] + ']'))
+        combos = []
+
+    for but in B: 
+        c = []
+        for i in range(len(ind)):
+            if i in but:
+                c.append(1)
+            else:
+                c.append(0)
+        combos.append(c)
+
+    k = 1
+    found = False
+    while not found:
+        for t in combinations(range(len(combos)), k):
+            erg = state
+            for i in t:
+                erg = xor(erg, combos[i])
+            if erg == indi:
+                found = True
+                break
+        k += 1
+    ans += k - 1
+
+    B = sp.Matrix(combos)
+    A = B.T
+    y = sp.Matrix(jolt)
+
+    n = A.shape[1]
+    prob = pulp.LpProblem("MinSumSolution", pulp.LpMinimize)
+    x = [pulp.LpVariable(f"x{i}", lowBound=0, cat='Integer') for i in range(n)]
+    prob += pulp.lpSum(x)
+
+    for i in range(A.shape[0]):
+        prob += pulp.lpSum(A[i, j]*x[j] for j in range(n)) == y[i]
+    prob.solve()
+
+    solution = [pulp.value(xi) for xi in x]
+    ans2 += int(sum(solution))
+
+print('Answer 1:', ans)
+print('Answer 2:', ans2)
